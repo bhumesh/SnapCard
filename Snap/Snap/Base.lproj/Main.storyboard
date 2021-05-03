@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Snap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="52" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOe-e3-C1g">
+                                <rect key="frame" x="299" y="46" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="apD-lA-8ng"/>
+                                    <constraint firstAttribute="height" constant="50" id="jnf-x7-4Ym"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remaining Cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFq-V0-hti">
+                                <rect key="frame" x="156.5" y="60.5" width="126.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="P1F-64-BFr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player#1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Fn-QJ-kAy">
+                                <rect key="frame" x="16" y="110" width="167.5" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="m0O-cl-ujw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player#2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Xb-r3-XZg">
+                                <rect key="frame" x="191.5" y="110" width="167.5" height="200"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2LY-be-9FM">
+                                <rect key="frame" x="16" y="326" width="167.5" height="30"/>
+                                <color key="backgroundColor" red="0.66666668653488159" green="0.27359517244447806" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="H1l-1i-hGB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="PLAYER 1 DRAW CARD">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="player1DrawCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dRq-qN-FxJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TcT-42-NR8">
+                                <rect key="frame" x="191.5" y="326" width="167.5" height="30"/>
+                                <color key="backgroundColor" red="0.66666668653488159" green="0.27359517244447806" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="RlR-BU-kNf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="PLAYER 2 DRAW CARD">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="player2DrawCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gez-sb-AM0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecY-JH-He7">
+                                <rect key="frame" x="127.5" y="401" width="120" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.48187491127533377" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Fbi-wr-oFs"/>
+                                    <constraint firstAttribute="width" constant="120" id="mWT-2b-dDz"/>
+                                </constraints>
+                                <state key="normal" title="START GAME">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OEX-51-20s"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CwA-tO-ALC">
+                                <rect key="frame" x="16" y="447" width="343" height="0.0"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Xb-r3-XZg" firstAttribute="leading" secondItem="2Fn-QJ-kAy" secondAttribute="trailing" constant="8" symbolic="YES" id="1qh-JV-Wim"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Xb-r3-XZg" secondAttribute="trailing" constant="16" id="63j-vD-qpk"/>
+                            <constraint firstItem="2LY-be-9FM" firstAttribute="top" secondItem="2Fn-QJ-kAy" secondAttribute="bottom" constant="16" id="6P8-Qa-1So"/>
+                            <constraint firstItem="3Xb-r3-XZg" firstAttribute="top" secondItem="2Fn-QJ-kAy" secondAttribute="top" id="Bix-z6-f3N"/>
+                            <constraint firstItem="CwA-tO-ALC" firstAttribute="top" secondItem="ecY-JH-He7" secondAttribute="bottom" constant="16" id="J7d-BA-Taq"/>
+                            <constraint firstItem="TcT-42-NR8" firstAttribute="top" secondItem="3Xb-r3-XZg" secondAttribute="bottom" constant="16" id="Jos-4T-BeE"/>
+                            <constraint firstItem="3Xb-r3-XZg" firstAttribute="height" secondItem="2Fn-QJ-kAy" secondAttribute="height" id="So4-73-8Mz"/>
+                            <constraint firstItem="2LY-be-9FM" firstAttribute="width" secondItem="2Fn-QJ-kAy" secondAttribute="width" id="XDa-E4-nGn"/>
+                            <constraint firstItem="sOe-e3-C1g" firstAttribute="leading" secondItem="lFq-V0-hti" secondAttribute="trailing" constant="16" id="Y5b-r5-Ipa"/>
+                            <constraint firstItem="ecY-JH-He7" firstAttribute="top" secondItem="TcT-42-NR8" secondAttribute="bottom" constant="45" id="ZeC-Pq-mhB"/>
+                            <constraint firstItem="lFq-V0-hti" firstAttribute="centerY" secondItem="sOe-e3-C1g" secondAttribute="centerY" id="cJQ-sT-bJf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TcT-42-NR8" secondAttribute="trailing" constant="16" id="cvQ-NO-B1T"/>
+                            <constraint firstItem="ecY-JH-He7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ewg-Pe-Bj7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sOe-e3-C1g" secondAttribute="trailing" constant="26" id="jjo-wz-r2P"/>
+                            <constraint firstItem="2LY-be-9FM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="kIx-GT-1gz"/>
+                            <constraint firstItem="2Fn-QJ-kAy" firstAttribute="top" secondItem="lFq-V0-hti" secondAttribute="bottom" constant="28.5" id="kTJ-aM-vYr"/>
+                            <constraint firstItem="2Fn-QJ-kAy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="l4j-gm-ej9"/>
+                            <constraint firstItem="CwA-tO-ALC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="lZA-8Y-DHi"/>
+                            <constraint firstItem="sOe-e3-C1g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="via-BL-e0O"/>
+                            <constraint firstItem="TcT-42-NR8" firstAttribute="width" secondItem="3Xb-r3-XZg" secondAttribute="width" id="xew-qS-Vc4"/>
+                            <constraint firstItem="3Xb-r3-XZg" firstAttribute="width" secondItem="2Fn-QJ-kAy" secondAttribute="width" id="ykw-b5-jxi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CwA-tO-ALC" secondAttribute="trailing" constant="16" id="zH7-3K-6wo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="playerOneButton" destination="2LY-be-9FM" id="Dft-tl-cVP"/>
+                        <outlet property="playerOneCard" destination="2Fn-QJ-kAy" id="bSB-Jg-XUI"/>
+                        <outlet property="playerTwoButton" destination="TcT-42-NR8" id="K6l-pK-8wL"/>
+                        <outlet property="playerTwoCard" destination="3Xb-r3-XZg" id="wIm-PG-fHl"/>
+                        <outlet property="remainingCards" destination="sOe-e3-C1g" id="mPw-k9-dwT"/>
+                        <outlet property="resultLabel" destination="CwA-tO-ALC" id="v0I-Qc-oCh"/>
+                        <outlet property="startButton" destination="ecY-JH-He7" id="uis-0O-S2s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+</document>
